@@ -1,0 +1,16 @@
+body {
+  background-image: url(images/lake.jpg);
+  background-size: cover;
+  text-align: center;
+  padding-top: 15em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 2px 2px 7px #1a1919;
+}
+
+#time {
+  font-size:100px;
+}
+
+#date {
+  font-size:25px;
+}
