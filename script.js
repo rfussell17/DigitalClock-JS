@@ -5,12 +5,10 @@
 function displayTime() {
   const time = new Date();
   let hours = time.getHours() % 12;
- // hours == 0? hours = 12 : time.getHours() % 12;
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
   let ampm = time.getHours() < 12? "AM" : "PM";
-  hours == 0? hours = 12 : time.getHours() % 12;
-  //hours === 0? hours = 12 : hours() % 12;
+
   //refactoring hours, minutes, seconds to display "0" before single digit numbers
   
   const refactoredHours = hours < 10? hours.innerText = "0" + time.getHours() : time.getHours();
