@@ -1,8 +1,7 @@
 body {
   background-image: url(images/lake.jpg);
   background-size: cover;
-  text-align: center;
-  padding-top: 15em;
+  padding-top: 9em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-shadow: 2px 2px 7px #1a1919;
 }
@@ -13,4 +12,10 @@ body {
 
 #date {
   font-size:25px;
+  position: relative;
+  bottom: 50px;
+}
+
+#text{
+  text-align: center;
 }

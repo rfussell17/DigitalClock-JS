@@ -11,6 +11,12 @@ function displayTime() {
   document.getElementById("time").innerHTML = localTime;
 }
 
+function displayDate(){
+const todaysDate = new Date();
+document.getElementById("date").innerHTML = todaysDate;
+  }
 
 displayTime();
 setInterval(displayTime, 1000);
+displayDate();
+setInterval(displayDate, 1000);
