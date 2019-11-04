@@ -1,19 +1,23 @@
 body {
   background-image: url(images/lake.jpg);
   background-size: cover;
-  padding-top: 9em;
+  padding-top: 14em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-shadow: 2px 2px 7px #1a1919;
 }
 
-#time {
-  font-size:100px;
+p {
+  font-size: 15px;
 }
 
-#date {
-  font-size:25px;
+.time {
+  font-size:100px;
+  padding-bottom: 5em;
+}
+
+.date {
+  font-size: 25px;
   position: relative;
-  bottom: 50px;
 }
 
 #text{
