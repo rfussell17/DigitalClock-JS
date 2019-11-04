@@ -1,6 +1,5 @@
 
 //initialize variables needed to start
-
 //create function to display time
 
 function displayTime() {
@@ -8,7 +7,7 @@ const time = new Date();
 const hours = time.getHours() % 12;
 const minutes = time.getMinutes();
 const seconds = time.getSeconds();
-const ampm = time.getHours() >12 ? "PM" : "AM";
+const ampm = time.getHours() >=12 ? "PM" : "AM";
 
 //refactoring hours, minutes, seconds to display "0" before single digit numbers
 
@@ -16,7 +15,7 @@ const refactoredHours = hours < 10? hours.innerText = "0" + time.getHours() % 12
 const refactoredMinutes = minutes < 10? hours.innerText = "0" + time.getMinutes() : time.getMinutes();
 const refactoredSeconds = seconds < 10? hours.innerText = "0" + time.getSeconds() : time.getSeconds();
 
-//assign newly refactored hours, min, sec to localTime & assign localTime to "time" class in HTML 
+//assign newly refactored hours, min, sec to localTime & assign localTime to "time" class in innerHTML 
 
 const localTime = refactoredHours + ":" + refactoredMinutes + ":" + refactoredSeconds; 
 document.getElementsByClassName("time")[0].innerHTML = localTime;
