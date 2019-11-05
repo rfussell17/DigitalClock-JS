@@ -15,7 +15,7 @@ p {
   padding-bottom: 5em;
 }
 
-.date {
+#date {
   font-size: 25px;
   position: relative;
 }
