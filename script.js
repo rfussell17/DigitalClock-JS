@@ -15,7 +15,7 @@ function displayTime() {
   const refactoredMinutes = minutes < 10? hours.innerText = "0" + time.getMinutes() : time.getMinutes();
   const refactoredSeconds = seconds < 10? hours.innerText = "0" + time.getSeconds() : time.getSeconds();
 
-  //create an array to display date in day of week, month and day of year
+  //create an array to display date in day of week, month and day of month
 
   const date = new Date();
   const dayOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -30,9 +30,9 @@ function displayTime() {
   const localTime = refactoredHours + ":" + refactoredMinutes + ":" + refactoredSeconds; 
   document.getElementsByClassName("time")[0].innerHTML = localTime;
   document.getElementsByClassName("ampm")[0].innerHTML = ampm;
-  document.getElementById("date").innerHTML = todaysDate;
+  document.getElementById("date").innerHTML = todaysDate;   
 }
-  
+                    
   //call time and date function, refresh every second
   
   displayTime();

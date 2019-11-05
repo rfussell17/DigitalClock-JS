@@ -1,13 +1,10 @@
 body {
-  background-image: url(images/lake.jpg);
+  background-image: url(images/lake.jpg) ;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 14em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-shadow: 2px 2px 7px #1a1919;
-}
-
-p {
-  font-size: 15px;
 }
 
 .time {
