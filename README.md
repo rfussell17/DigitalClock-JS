@@ -12,7 +12,7 @@
 
 
 
-<img src="images/pomoCropped.png" height= 500  title="HTML5 Powered">
+<img src="images/clockApp.png" height= 500  title="HTML5 Powered">
 
 ## Try it out here:    
 ### [Digital Clock](https://rfussell17.github.io/DigitalClock-JS/)
