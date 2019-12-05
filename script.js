@@ -1,6 +1,5 @@
 
 //initialize variables needed to start
-//create function to display time
 
 function displayTime() {
   const time = new Date();
