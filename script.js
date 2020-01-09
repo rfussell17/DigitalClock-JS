@@ -23,11 +23,11 @@ function displayTime() {
 
       let timeOfDay = "Good Day";
   
-      if(refactoredHours < 12) {
+      if(hours < 12) {
         timeOfDay = "Morning";
-      } else if(refactoredHours >= 12 && refactoredHours < 5) {
+      } else if(hours >= 12 && hours < 17) {
         timeOfDay = "Afternoon"
-      } else if(refactoredHours > 5 && refactoredHours > 12){
+      } else if(hours > 17 && hours <= 24){
         timeOfDay ="Evening";
       }
 
