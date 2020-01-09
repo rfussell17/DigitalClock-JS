@@ -10,7 +10,6 @@ body {
 
 .time {
   font-size: 100px;
-  padding-bottom: 5em;
 }
 
 #date {
@@ -20,4 +19,8 @@ body {
 
 #text {
   text-align: center;
+}
+
+#greeting {
+  font-size: 25px;
 }

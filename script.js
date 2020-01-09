@@ -7,6 +7,7 @@ function displayTime() {
   const seconds = time.getSeconds();
   const ampm = time.getHours() < 12 ? "AM" : "PM";
 
+
   //refactoring hours, minutes, seconds to display "0" before single digit numbers
 
   const refactoredHours =
@@ -19,6 +20,18 @@ function displayTime() {
     seconds < 10
       ? (hours.innerText = "0" + time.getSeconds())
       : time.getSeconds();
+
+      let timeOfDay = "Good Day";
+  
+      if(refactoredHours < 12) {
+        timeOfDay = "Morning";
+      } else if(refactoredHours >= 12 && refactoredHours < 5) {
+        timeOfDay = "Afternoon"
+      } else if(refactoredHours > 5 && refactoredHours > 12){
+        timeOfDay ="Evening";
+      }
+
+      document.getElementById("greeting").innerHTML = `Good ${timeOfDay}`;
 
   //create an array to display date in day of week, month and day of month
 
@@ -50,6 +63,8 @@ function displayTime() {
   const month = months[date.getMonth()];
   const dayOfMonth = date.getDate();
   const todaysDate = `${day}${month}${dayOfMonth}`;
+
+  
 
   //assign refactored hours, min, sec to localTime & assign constants localTime, ampm and todaysDate to the text div in html
 
