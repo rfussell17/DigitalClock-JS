@@ -21,14 +21,20 @@ function displayTime() {
       ? (hours.innerText = "0" + time.getSeconds())
       : time.getSeconds();
 
-      let timeOfDay = "Good Day";
-  
-      if(hours < 12) {
+  //custom greeting and background change depending on time of day
+
+      let hours24 = time.getHours();
+      let timeOfDay;
+
+      if (hours24 < 12) {
         timeOfDay = "Morning";
-      } else if(hours >= 12 && hours < 17) {
+        document.body.background = "images/morning.jpg";
+      } else if (hours24 < 18) {
         timeOfDay = "Afternoon"
-      } else if(hours > 17 && hours <= 24){
+        document.body.background = "images/afternoon.jpg";
+      } else {
         timeOfDay ="Evening";
+        document.body.background = "images/lake.jpg";
       }
 
       document.getElementById("greeting").innerHTML = `Good ${timeOfDay}`;
@@ -62,7 +68,7 @@ function displayTime() {
   const day = dayOfWeek[date.getDay()];
   const month = months[date.getMonth()];
   const dayOfMonth = date.getDate();
-  const todaysDate = `${day}${month}${dayOfMonth}`;
+  const todaysDate = `${day}  ${month}  ${dayOfMonth}`;
 
   
 
