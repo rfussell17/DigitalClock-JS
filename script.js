@@ -7,7 +7,6 @@ function displayTime() {
   const seconds = time.getSeconds();
   const ampm = time.getHours() < 12 ? "AM" : "PM";
 
-
   //refactoring hours, minutes, seconds to display "0" before single digit numbers
 
   const refactoredHours =
@@ -23,21 +22,21 @@ function displayTime() {
 
   //custom greeting and background change depending on time of day
 
-      let hours24 = time.getHours();
-      let timeOfDay;
+  let hours24 = time.getHours();
+  let timeOfDay;
 
-      if (hours24 < 12) {
-        timeOfDay = "Morning";
-        document.body.background = "images/morning.jpg";
-      } else if (hours24 < 18) {
-        timeOfDay = "Afternoon"
-        document.body.background = "images/afternoon.jpg";
-      } else {
-        timeOfDay ="Evening";
-        document.body.background = "images/lake.jpg";
-      }
+  if (hours24 < 12) {
+    timeOfDay = "Morning";
+    document.body.background = "images/morning.jpg";
+  } else if (hours24 < 18) {
+    timeOfDay = "Afternoon";
+    document.body.background = "images/afternoon.jpg";
+  } else {
+    timeOfDay = "Evening";
+    document.body.background = "images/lake.jpg";
+  }
 
-      document.getElementById("greeting").innerHTML = `Good ${timeOfDay}`;
+  document.getElementById("greeting").innerHTML = `Good ${timeOfDay}`;
 
   //create an array to display date in day of week, month and day of month
 
@@ -65,12 +64,11 @@ function displayTime() {
     "November",
     "December"
   ];
+
   const day = dayOfWeek[date.getDay()];
   const month = months[date.getMonth()];
   const dayOfMonth = date.getDate();
   const todaysDate = `${day}  ${month}  ${dayOfMonth}`;
-
-  
 
   //assign refactored hours, min, sec to localTime & assign constants localTime, ampm and todaysDate to the text div in html
 
